@@ -2,7 +2,7 @@
 *{margin:0;padding:0;}
 
 body{
-	background-color: #000000;
+	background-color: #10111A;
 	color: aliceblue;
 }
 
@@ -315,7 +315,10 @@ body{
 
 
 /* services  */
-
+.services
+{
+	background-color: #FFFFFF;
+}
 
 .block_info_news{
 	height: 200px;
@@ -372,6 +375,31 @@ border-radius: 22px  22px  0px  0px;
 	padding: 0 ;
 	
 	
+}
+
+
+.title {
+  font-family: sans-serif;
+  font-weight: normal;
+  background-color: #10111A;
+  text-align: center;
+  color: #fff;
+  border-radius: 1px;
+  position: relative;
+	
+}
+
+.title::after {
+  content: '';
+  padding-top: 5%;
+  
+  background: linear-gradient(to right top, transparent 49.5%, #10111A 50%) left / 50.025% 100% no-repeat,
+linear-gradient(to left top, transparent 49.5%, #10111A 50%) right / 50.025% 100% no-repeat;
+  
+  position: absolute;
+  top: 100%;
+  left: 2px;
+  right: 2px;
 }
 
 
