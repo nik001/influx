@@ -339,6 +339,9 @@ border-radius: 22px  22px  0px  0px;
 }
 .text_usl
 {
+	background-color: #10111A;
+	color: #FFF;
+	border-radius: 0 0 23px 23px ;
 	height: 60px;
 	font-size: 18px;
 	text-align: center;
