@@ -168,6 +168,15 @@ body{
     -webkit-box-shadow: #a2a2a2 0 10px 10px 0;
     box-shadow: #a2a2a2 0 10px 10px 0;
 }
+.slide-all-text-style h1{
+    font-family: Ristretto;
+    font-size: 60px;
+    margin-top: -450px;
+    padding-bottom: 30px
+}
+.head-slide-button .gradient-border{
+    margin-left: 72px;
+}
 .tariff {
     height: 100%;
     background-color: #F6F6F6;
@@ -200,7 +209,19 @@ body{
     color: #1b1e21;
     border-radius: 5px;
 }
+.carousel{
+    z-index: 1;
+}
+.slider-mask img{
+    z-index: 1000;
+    width: 100%;
+    margin-top: -150px;
+    position: relative;
 
+}
+.carousel-indicators{
+    padding-bottom: 70px;
+}
 /*	кнопочка доработаная =)*/
 .btn-offer
 {
@@ -281,6 +302,10 @@ body{
     height: auto;
     max-width: none;
     max-height: none;
+}
+.carousel-item img{
+    height: 100vh;
+    overflow: hidden;
 }
 /*.row_row*/
 /*{*/
