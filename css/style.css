@@ -659,7 +659,99 @@ body{
     background-color: #fff;
     border-color: #000;
 }
+.services-row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 35px;
+}
+.services-col{
+    max-width: 350px;
+    margin-right: 5px;
+    margin-top: 15px;
+    position: relative;
+}
+.services-col-main{
+    border: 3px solid #f28e03;
+    border-radius: 30px;
+    background: black;
+}
 
+.services-col-main h4{
+    color: #fff;
+    text-align: center;
+    font-weight: 600;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-size: 18px;
+}
+.services-col img{
+    width: 254px;
+    border-top-right-radius: 28px;
+    border-top-left-radius: 28px;
+}
+.services-col-hidden{
+    display: none;
+    padding-top:15px;
+    border: 3px solid #f28e03;
+    border-top: none;
+    border-bottom-right-radius: 28px;
+    border-bottom-left-radius: 28px;
+    height: 360px;
+}
+.services-col-hidden p{
+    font-size: 14px;
+}
+.services-col-hidden a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #00ffff;
+    border: 4px solid #00ffff;
+    border-radius: 25px;
+    padding: 10px 15px;
+    font-size: 18px;
+    position: absolute;
+    bottom: 18px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    white-space: nowrap;
+}
+.services-col-hidden p{
+    margin: 0 10px;
+}
+.services-col:nth-child(-n+4):hover .services-col-main{
+    border-bottom: none;
+    border-bottom-right-radius:0;
+    border-bottom-left-radius: 0; 
+}
+.services-col:nth-child(-n+4):hover .services-col-main h4{
+    margin-bottom: -5px;
+}
+.services-col:hover .services-col-hidden{
+    display:block;
+    position:absolute;
+    z-index:9999;
+    text-align: center;
+    background: #000;
+    color: #fff;
+    max-width:260px;
+}
+.horizontal-element{
+    display: flex;
+    max-width: 550px;
+}
+.horizontal-element-text{
+    margin-left: 230px;
+    height: 345px;
+    border: none;
+    width: 400px;
+}
+.services-col:nth-child(5):hover .horizontal-element{
+    border: 3px solid #f28e03;
+    border-radius: 30px;
+}
+.services-col:nth-child(5):hover .services-col-main{
+    border: none;
+}
 /*Анимация*/
 .slideInUp {
     -webkit-animation-name: slideInUp;
