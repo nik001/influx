@@ -1,0 +1,122 @@
+/**
+ * Предложение исправлений
+ */
+.slider-mask{
+    position: relative;
+}
+.slider-mask img{
+    position: absolute;
+    bottom: -1px;
+}
+
+.slide img{
+    max-height: 550px;
+}
+.carousel-caption{
+    position: absolute;
+    top:0;
+    right: 5%;
+    left: 5%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: center;
+}
+.carousel-caption p{
+    text-align: left;
+    margin-left: 5%;
+}
+.head-slide-button .gradient-border{
+    margin-left: 5%;
+}
+.carousel-control-next, .carousel-control-prev{
+    bottom: auto;
+    top:35%;
+    width: 5%;
+}
+.text-h1-slider{
+    padding-top: 40px;
+    padding-bottom: 15px;
+    text-align: left;
+    margin-left: 5%;
+}
+.carousel-arrow::after {
+    content: '';
+    padding-top: 5%;
+    background: linear-gradient(to right top,#ffffff 49.5%, transparent 50%) left / 50.025% 100% no-repeat, linear-gradient(to left top, #ffffff 49.5%, transparent 50%) right / 50.025% 100% no-repeat;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+@media (max-width: 1500px) {
+    .text-h1-slider{
+        font-size: 55px;
+        padding-top: 15px;
+       padding-bottom: 10px;
+    }
+    .slider-mask img{
+        bottom: -20px;
+    }
+    .carousel-caption{
+        left: 5px;
+        right: 5px;
+    }
+    .carousel-caption p{
+        font-size: 20px;
+    }
+    .head-slide-button .gradient-border{
+        margin-top: 25px;
+    }
+}
+
+@media (max-width: 1150px) {
+    .text-h1-slider{
+        font-size: 50px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .slider-mask img{
+        bottom: -40px;
+    }
+    .carousel-caption{
+        left: 5px;
+        right: 5px;
+    }
+    .carousel-caption p{
+        font-size: 18px;
+    }
+    .head-slide-button .gradient-border{
+        margin-top: 25px;
+    }
+}
+
+
+@media (max-width: 1000px) {
+    .text-h1-slider{
+        font-size: 45px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .slider-mask img{
+        bottom: 0;
+    }
+    .carousel-inner{
+        margin-bottom: 30px;
+    }
+    .carousel-caption{
+        left: 5px;
+        right: 5px;
+    }
+    .carousel-caption p{
+        font-size: 15px;
+    }
+    .head-slide-button .gradient-border{
+        margin-top: 25px;
+    }
+}
+@media (max-width: 850px) {
+    .carousel-inner{
+        margin-bottom: 70px;
+    }
+}
