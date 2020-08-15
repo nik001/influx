@@ -1,16 +1,9 @@
 /**
  * Предложение исправлений
  */
-.slider-mask{
-    position: relative;
-}
-.slider-mask img{
-    position: absolute;
-    bottom: -1px;
-}
-
 .slide img{
     max-height: 550px;
+    min-height: 300px;
 }
 .carousel-caption{
     position: absolute;
@@ -33,7 +26,7 @@
 .carousel-control-next, .carousel-control-prev{
     bottom: auto;
     top:35%;
-    width: 5%;
+    width: 10%;
 }
 .text-h1-slider{
     padding-top: 40px;
@@ -47,7 +40,7 @@
     background: linear-gradient(to right top,#ffffff 49.5%, transparent 50%) left / 50.025% 100% no-repeat, linear-gradient(to left top, #ffffff 49.5%, transparent 50%) right / 50.025% 100% no-repeat;
     position: absolute;
     width: 100%;
-    bottom: 0;
+    bottom: -1px;
 }
 @media (max-width: 1500px) {
     .text-h1-slider{
@@ -69,7 +62,13 @@
         margin-top: 25px;
     }
 }
-
+@media (max-width: 1200px) {
+    .social-btn{
+        position: absolute;
+        right: 14px;
+        top: 5px;
+    }
+}
 @media (max-width: 1150px) {
     .text-h1-slider{
         font-size: 50px;
@@ -98,12 +97,6 @@
         padding-top: 10px;
         padding-bottom: 10px;
     }
-    .slider-mask img{
-        bottom: 0;
-    }
-    .carousel-inner{
-        margin-bottom: 30px;
-    }
     .carousel-caption{
         left: 5px;
         right: 5px;
@@ -114,9 +107,71 @@
     .head-slide-button .gradient-border{
         margin-top: 25px;
     }
+    .carousel-control-next, .carousel-control-prev{
+        width: 12%;
+    }
+    .social-btn{
+        position: absolute;
+        right: 25px;
+        top: 14px;
+    }
 }
-@media (max-width: 850px) {
-    .carousel-inner{
-        margin-bottom: 70px;
+
+@media (max-width: 800px) {
+    .top-call-button{
+        position: absolute;
+        top: -25px;
+        right: -18px;
+    }
+}
+@media (max-width: 768px) {
+    .header_icon{
+        text-align: center;
+    }
+    .header_icon div{
+        padding: 3px;
+    }
+    .social-btn{
+        position: absolute;
+        right: 25px;
+        top: 40px;
+    }
+}
+@media (max-width: 760px) {
+    .head-slide-button .gradient-border{
+        margin-top: 8px;
+        font-size: 16px !important;
+        padding: 0px;
+        display: inline-flex !important;
+        flex-direction: column;
+    }
+    .carousel-arrow::after{
+        bottom: -1px;
+    }
+    .carousel-caption p{
+        text-align: center;
+        margin:0px;
+    }
+    .text-h1-slider{
+        text-align: center;
+        margin: 0px;
+    }
+}
+@media (max-width: 720px) {
+    .md-hide{
+        display: none;
+    }
+    .top-call-button{
+        position: absolute;
+        top: -25px;
+        right: 0px;
+        font-size: 16px !important;
+    }
+}
+@media (max-width: 576px) {
+    .top-call-button{
+        position: absolute;
+        top: -25px;
+        right: 30px;
     }
 }
