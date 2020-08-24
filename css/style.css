@@ -659,13 +659,16 @@ body{
     background-color: #fff;
     border-color: #000;
 }
-
+.section-title h1{
+    text-align: center;
+    padding-top: 15px;
+}
 
 /*Услуги Начало*/
 .services{
     position: relative;
-    margin-bottom: 750px;
-    margin-top: 75px;
+    padding-bottom: 750px;
+    background: #fff;
 }
 .services-row{
     display: flex;
@@ -676,11 +679,11 @@ body{
     position: absolute;
 }
 .services-row:first-child{
-    top: 0;
+    top: 100px;
     z-index: 700;
 }
 .services-row:last-child{
-    top:320px;
+    top:420px;
     z-index: 650;
 }
 .services-col{
