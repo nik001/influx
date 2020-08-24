@@ -662,12 +662,26 @@ body{
 
 
 /*Услуги Начало*/
+.services{
+    position: relative;
+    margin-bottom: 750px;
+    margin-top: 75px;
+}
 .services-row{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     margin-right: 25px;
     margin-left: 25px;
+    position: absolute;
+}
+.services-row:first-child{
+    top: 0;
+    z-index: 700;
+}
+.services-row:last-child{
+    top:320px;
+    z-index: 650;
 }
 .services-col{
     position: relative;
@@ -679,6 +693,9 @@ body{
     height: 320px;   
     background: #000;
     color: #fff;
+    position: relative;
+    margin-right: 10px;
+    margin-left: 10px;
 }
 .services-row:first-child .services-col:nth-child(2n){
     background: rgb(248,191,75);
@@ -712,7 +729,7 @@ body{
     top: 250px;
 }
 .services-row:first-child .services-col:hover{
-    height: 500px;
+    height: 645px;
     transition: height .5s ease-in;
 }
 .services-row:first-child .services-col:hover p{
@@ -728,11 +745,11 @@ body{
     overflow: hidden;
     border-top-left-radius: 28px;
     border-bottom-left-radius: 28px;
-    width: 245px;
+    width: 250px;
 }
 .services-row:last-child .services-col:nth-child(n+3):hover img{
     overflow: hidden;;
-    width: 245px;
+    width: 250px;
     border-right: 3px solid #f28e03;
 }
 .services-row:last-child .services-col:nth-child(-n+2):hover {
@@ -772,15 +789,15 @@ body{
     color: #fff;
     border-top-right-radius: 30px;
     border-bottom-right-radius: 30px;
-    width: 270px;
 }
 .services-row:last-child .services-col:nth-child(2n+1) .services-hidden{
     background: rgb(248,191,75);
     background: linear-gradient(146deg, rgba(248,191,75,1) 0%, rgba(237,141,38,1) 100%); 
 }
 .services-row:last-child .services-col{
-    width: 245px;
-    margin-right: 5px;
+    width: 250px;
+    margin-right: 10px;
+    margin-left: 10px;
     margin-top: 15px;
     position: relative;       
 }
@@ -796,7 +813,7 @@ body{
     width: 280px;
     left: 0px;
     opacity: 0;
-    height: 307px;
+    height: 312px;
     margin-top: -3px;
 }
 
@@ -825,7 +842,7 @@ body{
     opacity: 1;
 }
 .services-row:last-child .services-col:nth-child(n+3):hover .services-hidden{
-    left:-265px;
+    left:-270px;
     opacity: 1;
     transition:left .3s linear;
     border: 3px solid #f28e03;
@@ -833,7 +850,7 @@ body{
     border-right: none;
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
-    width: 265px;
+    width: 273px;
 }
 .services-row:last-child .services-col:hover .services-hidden h4{
     opacity: 1;
@@ -847,9 +864,9 @@ body{
     border-bottom-right-radius: 30px;
 }
 .services-row:last-child .services-col img{
-    width: 239px;
-    border-top-left-radius: 28px;
-    border-top-right-radius: 28px;
+    width:244px;
+    border-top-left-radius: 27px;
+    border-top-right-radius: 27px;
 }
 .services-hidden{
     z-index: 300;
