@@ -668,6 +668,9 @@ body{
 .section-title h1{
     text-align: center;
     padding-top: 15px;
+    font-family: 'RistrettoPro-Regular';
+    font-size: 70px;
+    letter-spacing: 3;
 }
 
 /*Услуги Начало*/
@@ -683,6 +686,7 @@ body{
     margin-right: 25px;
     margin-left: 25px;
     position: absolute;
+    margin-top: 35px;
 }
 .services-row:first-child{
     top: 100px;
@@ -913,13 +917,10 @@ body{
 
 /*feedback начало*/
 
-.feedback img{
-    width: 100%;
-}
 .feedback h1{
     font-family: 'RistrettoPro-Regular';
     letter-spacing: 2px;
-    font-size: 75px;
+    font-size: 88px;
 }
 .feedback-form form{
     margin-top: 20px;
@@ -927,10 +928,11 @@ body{
 .feedback-form form input{
     border-radius: 30px;
     background: none;
-    border:2px solid #fff;
-    padding: 5px 7px;
+    border: 2px solid #fff;
+    padding: 3px 7px;
     color: #fff;
     margin-right: 8px;
+    font-size: 18px;
 }
 .feedback-form form input::-webkit-input-placeholder{
     color: #fff;
@@ -938,27 +940,96 @@ body{
 .feedback-form form button{
     border-radius: 30px;
     background-color: #F4AD27;
-    padding: 5px 10px;
+    padding: 2px 9px 9px 9px;
     border: none;
     font-family: 'Engravers Gothic';
     font-weight: bold;
+    font-size: 18px;
 }
 .feedback-text p{
-    font-size: 16px;
+    font-size: 20px;
     margin-top: 30px;
     text-align: center;
     font-family: 'Rubik';
 }
 .feedback-row{
-    width: 550px;
+    width: 650px;
     float: left;
-    margin-top: 30px;
+    margin-top: 10%;
+}
+.triangle::after {
+    content: '';
+    padding-top: 5%;
+    background:linear-gradient(to left bottom, #ffffff 49.5%, transparent 50%) left / 20.025% 100% no-repeat, linear-gradient(to right bottom,#ffffff 49.5%, transparent 50%) right / 80.025% 100% no-repeat;
+    position: absolute;
+    width: 100%;
+    top: 0;
+}
+.feedback{
+    position: relative;
+}
+.our-map{
+    margin-top: 500px;
 }
 /*feedback конец*/
-.our-map{
-    margin-top: 320px;
-}
+/*footer начало*/
 
+footer .collapse{
+    justify-content: space-around;
+}
+footer .navbar .nav-item a{
+    font-size: 22px;
+    font-family: 'Rubik';
+    margin: 0 15px;
+    color: #fff;
+}
+footer .navbar .nav-item a:hover{
+    color:#d79300;
+}
+footer hr{
+    width: 100%;
+    height:1px;
+    background-color: #fff;
+    margin-bottom: 55px;
+}
+.bottom-info a img{
+    margin-left: 5%;
+    margin-bottom: 3%;
+}
+.bottom-info-row{
+    display: flex;
+    margin: 20px;
+    justify-content: space-around;
+}
+.bottom-info-row h1{
+    font-size: 35px;
+    font-family: 'Engravers Gothic';
+    font-weight: 500;
+}
+.bottom-info-row p{
+    font-size: 14px;
+    font-family: 'Rubik';
+}
+.bottom-info-col{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+/*footer конец*/
+@media screen and (max-width: 800px){
+    .bottom-info-row{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media screen and (max-width: 1200px){
+    .bottom-info-row h1{
+    font-size: 28px;
+    }
+    .bottom-info-row p{
+        font-size: 12px;
+        font-family: 'Rubik';
+    }
+}
 /*Анимация*/
 .slideInUp {
     -webkit-animation-name: slideInUp;

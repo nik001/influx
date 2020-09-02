@@ -138,9 +138,8 @@ border-radius: 22px  22px  0px  0px;
 
 
 .header-menu{
-
+  color: #fff;
 	font-family: EngraversGothic;
-	color:#d79300;
 	margin: 0;
 	padding: 0 ;
 	margin-bottom: 1px
@@ -150,8 +149,6 @@ border-radius: 22px  22px  0px  0px;
 	border-bottom: double 1px #d79300;	
 	margin: 0;
 	padding: 0 ;
-	
-	
 }
 
 

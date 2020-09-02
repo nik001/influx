@@ -15,6 +15,8 @@
     <script src="js/jquery.maskedinput.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.maskedinput.js"></script>
+    <script src="js/phone-number.js"></script>
 	<link rel="shortcut icon" href="img/лого111.png" type="image/x-icon">
 	
     <title>IT-INFLUX</title>
@@ -48,7 +50,7 @@
                 <button id="navCollapse" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar_menu" aria-controls="navbar_menu" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse pt-3 " id="navbar_menu">
+                <div class="collapse navbar-collapse pt-3 " style="color:#fff;" id="navbar_menu">
                     <ul class="navbar-nav ">
                         <li class="nav-item active ">
                             <a class="nav-link header-menu" href="#">Услуги <span class="sr-only">(current)</span></a>
@@ -231,7 +233,7 @@
   </div>
 </section>
 <section class="feedback">
-  <img src="img/triangle.png" alt="">
+  <div class="triangle"></div>
   <div class="container">
     <div class="feedback-row">
     <div class="feedback-title">
@@ -254,7 +256,58 @@
 <div class="our-map">
   <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ab7f1eb9631d83c189b9186fa4f8e53735ef7c4ec722b84c59372a7e414783ba7&amp;width=100%25&amp;height=300&amp;lang=ru_RU&amp;scroll=true"></script>
 </div>
+<footer>
+  
+  <nav class="navbar navbar-expand-lg">
+    <button id="navCollapse" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar_menu" aria-controls="navbar_menu" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse pt-3 " id="navbar_menu">
+      <ul class="navbar-nav ">
+          <li class="nav-item active ">
+               <a class="nav-link header-menu" href="#">Услуги <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item ">
+                            <a class="nav-link header-menu" href="#">О нас</a>
+          </li>
+          <li class="nav-item ">
+               <a class="nav-link header-menu" href="#">Портфолио</a>
+           </li>
+          <li class="nav-item ">
+              <a class="nav-link header-menu" href="#FAQ">FAQ</a>
+           </li>
+       </ul>
+      </div>
+  </nav>
+  <hr>
+  <div class="bottom-info">
+    <div class="bottom-info-row">
+      <div class="bottom-info-col">
+        <a href="#">
+            <img src="./img/influx/logo.png" alt="логотип" height="57">
+        </a>
+      </div>
+      <div class="bottom-info-col">
+        <h1>Контакты</h1>
+        <p>Адрес: г. Набережные Челны, 52А/3, <br>
+          Московский пр. 140 “Форт Диалог” <br>
+          Тел.: +7 (906) 118-05-05 <br>
+          Email: support@it-influx.ru
+        </p>
+      </div>
+      <div class="bottom-info-col">
+        <h1>IT-INFLUX</h1>
+        <p>
+        Информация на сайте it-influx.ru носит исключительно ознакомительный характер <br>
+        и ни при каких условиях неявляется публичной офертой, определяемой положениями <br>
+        Статьи 437 Гражданского кодекса РФ. 
+        </p>  
+      </div>
+      <div class="bottom-info-col">
+        <h1>Мы в соцсетях</h1>
+      </div>
+    </div>
+  </div>
+</footer>
 </body>
-<script src="libs/mask/jquery.maskedinput.js"></script>
-<script src="js/phone-number.js"></script>
 </html>
