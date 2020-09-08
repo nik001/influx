@@ -1,10 +1,6 @@
 /**
  * Предложение исправлений
  */
-.slide img{
-    max-height: 550px;
-    min-height: 300px;
-}
 .carousel-caption{
     position: absolute;
     top:0;
@@ -37,7 +33,7 @@
 .carousel-arrow::after {
     content: '';
     padding-top: 5%;
-    background: linear-gradient(to right top,#ffffff 49.5%, transparent 50%) left / 50.025% 100% no-repeat, linear-gradient(to left top, #ffffff 49.5%, transparent 50%) right / 50.025% 100% no-repeat;
+    background: linear-gradient(to right top,#F2A509 49.5%, transparent 50%) left / 50.025% 100% no-repeat, linear-gradient(to left top, #F2A509 49.5%, transparent 50%) right / 50.025% 100% no-repeat;
     position: absolute;
     width: 100%;
     bottom: -1px;
