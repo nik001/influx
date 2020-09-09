@@ -14,7 +14,8 @@ header{
 .nav-item{
     font-family: 'Engravers Gothic' !important;
     margin-right: 15px;
-    margin-left: 15px;   
+    margin-left: 15px;  
+    font-size: 18px; 
 }
 .nav-link{
     padding: 0 !important;
@@ -800,6 +801,16 @@ ul.thumbnails img
     transform: translate(-50%, 0);
     white-space: nowrap;
 }
+.services-card-text a:hover{
+    text-decoration: none;
+    color: #875300;
+    border-color: #875300;
+}
+.black-walper .services-card-text a:hover{
+    text-decoration: none;
+    color: #9EE8E6;
+    border-color: #9EE8E6;
+}
 
 /* Control box 
 ------------------------------------------------ */
@@ -884,6 +895,9 @@ ul.thumbnails img
     letter-spacing: 2px;
     font-size: 100px;
     color: #fff;
+}
+.feedback-title img{
+    display: none;
 }
 .feedback-form form{
     margin-top: 20px;
@@ -998,18 +1012,27 @@ footer hr{
 }
 .social-group a {
     background-color: #507298;
-    padding: 3px 25px;
+    padding: 3px 22px;
 }
 .social-group a:first-child {
     background-color: #D41D60;
-    padding: 3px 25px;
+    padding: 3px 22px;
+    margin-right: 4px;
 }
 .social-group a:last-child {
     background-color: #2497F0;
-    padding: 3px 25px;
+    padding: 3px 22px;
+    margin-left: 4px;
 }
 /*footer конец*/
 @media (max-width: 1199px){
+    .bottom-info-row h1{
+    font-size: 28px;
+    }
+    .bottom-info-row p{
+        font-size: 12px;
+        font-family: 'Rubik';
+    }
     .thumbnail{
         width: 250px;
         height: 500px;
@@ -1026,20 +1049,83 @@ footer hr{
         font-size: 15px;
         padding: 3px 6px;
     }
+    
+    .feedback-col img{
+        display: none;
+    }
+    .feedback-title img{
+        display: block;
+        margin: 0 auto;
+    }
+    .feedback-row{
+        flex-direction: column;
+        align-items: center;
+    }
 }
 @media screen and (max-width: 800px){
     .bottom-info-row{
         flex-direction: column;
         align-items: center;
     }
-}
-@media screen and (max-width: 1200px){
-    .bottom-info-row h1{
-    font-size: 28px;
+    .feedback-text p{
+        font-size: 15px;
     }
-    .bottom-info-row p{
-        font-size: 12px;
-        font-family: 'Rubik';
+    .feedback-form form input{
+        font-size: 14px;
+    }
+    .feedback-form form button{
+        font-size: 14px;
+    }
+    .feedback-form form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .feedback-form form input{
+        margin-bottom: 17px;
+        width: 65%;
+    }
+    .feedback h1{
+        font-size: 80px;
+        text-align: center;
+    }
+    .navbar-rows{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .gradient-border{
+        margin-top: 32px;
+    }
+    .header-slider .carousel-item{
+        height: 50vh;
+    }
+    .carousel-caption{
+        left: 0 !important;
+    }
+    .section-title h1{
+        font-size: 80px;
+    }
+    ..company-info p{
+        font-size: 15px;
+    }
+    .header-adres{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .header-adres .social-btn{
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+}
+@media screen and (max-width: 470px){
+    .feedback-title img{
+        display: block;
+        padding-left: 15px;
+        padding-right: 15px;
+        max-width: 350px;
     }
 }
 /*Анимация*/
