@@ -26,6 +26,11 @@ header{
 .slider-text p{
     font-family: 'Engravers Gothic';
 }
+.header-adres{
+    display: flex;
+    flex-wrap: nowrap !important;
+    justify-content: space-around;
+}
 .offer_bg
 {
    background-color: #000;
@@ -705,9 +710,7 @@ header{
     position: absolute;
     width: 100%;
     z-index: 2222;
-
-}
-
+    }
 /*О нас конец*/
 
 /*Услуги Начало*/
@@ -761,8 +764,8 @@ header{
     font-size: 29px;
 }
 .services-card-top{
-    border-top-right-radius: 30px;
-    border-top-left-radius: 30px;
+    border-top-right-radius: 27px;
+    border-top-left-radius: 27px;
     background: #fff;
 }
 .services-card-top img{
@@ -909,7 +912,7 @@ ul.thumbnails img
     padding: 3px 7px;
     color: #fff;
     margin-right: 8px;
-    font-size: 18px;
+    font-size: 15px;
 }
 .feedback-form form input::-webkit-input-placeholder{
     color: #fff;
@@ -921,7 +924,7 @@ ul.thumbnails img
     border: none;
     font-family: 'Engravers Gothic';
     font-weight: bold;
-    font-size: 18px;
+    font-size: 16px;
 }
 .feedback-text p{
     font-size: 20px;
@@ -1024,7 +1027,28 @@ footer hr{
     padding: 3px 22px;
     margin-left: 4px;
 }
+.header-adres .social-btn{
+        position: relative;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+}
 /*footer конец*/
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .company-info-mask::after {
+    background:linear-gradient(to left bottom, #F2A509 49.85%, transparent 30%) left / 80.025% 100% no-repeat, linear-gradient(to right bottom,#F2A509 49.55%, transparent 30%) right / 20.025% 100% no-repeat;
+    }
+    .triangle::after {
+    background:linear-gradient(to left bottom, #fff 49.5%, transparent 30%) left / 20.025% 100% no-repeat, linear-gradient(to right bottom,#ffffff 49.85%, transparent 30%) right / 80.025% 100% no-repeat;
+    }
+    .thumbnail{
+        height: 635px;
+        margin-right: 5px;
+    }
+}
 @media (max-width: 1199px){
     .bottom-info-row h1{
     font-size: 28px;
@@ -1114,10 +1138,12 @@ footer hr{
         flex-direction: column;
         align-items: center;
     }
-    .header-adres .social-btn{
-        position: relative;
-        top: 0;
-        left: 0;
+}
+@media screen and (max-width: 990px){
+    .header-adres .mb-2{
+        font-size: 11px;
+        margin-left: 5px;
+        margin-right: 5px;
     }
 }
 @media screen and (max-width: 470px){
