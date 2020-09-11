@@ -8,6 +8,10 @@ header{
     font-family: 'Rubik';
     font-size: 14px;
 }
+nav{
+    padding-left: 0 !important;
+    padding-right: 0   !important;
+}
 .navbar-bg{
     background-color: #4b4941;
 }
@@ -22,14 +26,16 @@ header{
 }
 .slider-text h1{
     font-family: 'RistrettoPro-Regular';
+    font-size: 80px;
 }
 .slider-text p{
     font-family: 'Engravers Gothic';
+    font-size: 31px;
 }
 .header-adres{
     display: flex;
     flex-wrap: nowrap !important;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 .offer_bg
 {
@@ -38,6 +44,13 @@ header{
     background-size: cover;
     background-position: center;
     color: #fff;
+}
+.top-call-button{
+    font-size: 18px !important;
+}
+.button-slider{
+    font-size: 24px !important;
+    width: 230px !important;
 }
 .middle_block {
     text-align: center;
@@ -198,7 +211,6 @@ header{
     padding-bottom: 30px
 }
 .head-slide-button .gradient-border{
-    margin-left: 72px;
 }
 .tariff {
     height: 100%;
@@ -329,6 +341,12 @@ header{
 .carousel-item img{
     height: 100vh;
     overflow: hidden;
+}
+.carousel-item .carousel-caption h1{
+    font-size: 80px;
+}
+.carousel-item .carousel-caption p{
+    font-size: 31px;
 }
 /*.row_row*/
 /*{*/
@@ -702,6 +720,8 @@ header{
 
 .company-info p{
     margin-bottom: 12%;
+    font-size: 20px;
+    text-align: center;
 }
 .company-info-mask::after {
     content: '';
@@ -736,6 +756,9 @@ header{
 }
 .black-walper .services-card-text p{
     color: #fff;
+}
+.services-card-text{
+    display: none;
 }
 .black-walper .services-card-text a{
     text-decoration: none;
@@ -788,7 +811,7 @@ ul.thumbnails img
 {
   border:0;
   width: 307px;
-  height: 630px;
+  height: 450px;
   margin: 0 auto;
 }
 .services-card-text a{
@@ -966,7 +989,7 @@ footer .collapse{
     justify-content: space-around;
 }
 footer .navbar .nav-item a{
-    font-size: 22px;
+    font-size: 30px;
     font-family: 'Engravers Gothic';
     margin: 0 15px;
     color: #fff;
@@ -982,6 +1005,7 @@ footer hr{
     height:1px;
     background-color: #fff;
     margin-bottom: 55px;
+    margin-top: 0;
 }
 .bottom-info .bottom-info-col:first-child a img{
     margin-left: 5%;
@@ -993,17 +1017,20 @@ footer hr{
     justify-content: space-around;
 }
 .bottom-info-row h1{
-    font-size: 35px;
+    font-size: 24px;
     font-family: 'Engravers Gothic';
-    font-weight: 500;
+    font-weight: bold;
 }
 .bottom-info-row p{
-    font-size: 14px;
+    font-size: 13px;
     font-family: 'Rubik';
 }
 .bottom-info-col{
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.bottom-info-col:last-child h1{
+    font-size: 18px;
 }
 .bottom-info .bottom-info-col:last-child img{
     width: 24px;
@@ -1015,17 +1042,16 @@ footer hr{
 }
 .social-group a {
     background-color: #507298;
-    padding: 3px 22px;
+    padding: 3px 18px;
+    border-radius: 3px;
 }
 .social-group a:first-child {
     background-color: #D41D60;
-    padding: 3px 22px;
-    margin-right: 4px;
+    margin-right: 6px;
 }
 .social-group a:last-child {
     background-color: #2497F0;
-    padding: 3px 22px;
-    margin-left: 4px;
+    margin-left: 6px;
 }
 .header-adres .social-btn{
         position: relative;
@@ -1047,6 +1073,15 @@ footer hr{
     .thumbnail{
         height: 635px;
         margin-right: 5px;
+    }
+    .services-card-text a{
+    left: 55%;
+    }
+    .black-walper .services-card-text a{
+    left: 55%;
+    }
+    .feedback-text p{
+        font-size: 19px;
     }
 }
 @media (max-width: 1199px){
@@ -1085,6 +1120,21 @@ footer hr{
         flex-direction: column;
         align-items: center;
     }
+    .carousel-item .carousel-caption h1{
+    font-size: 50px;
+    }
+    .carousel-item .carousel-caption p{
+        font-size: 25px;
+    }
+}
+@media screen and (min-width: 800px){
+    .navbar-rows{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-right: 40px !important;
+        margin-left: -20px !important;
+    }
 }
 @media screen and (max-width: 800px){
     .bottom-info-row{
@@ -1113,22 +1163,14 @@ footer hr{
         font-size: 80px;
         text-align: center;
     }
-    .navbar-rows{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .gradient-border{
-        margin-top: 32px;
-    }
-    .header-slider .carousel-item{
-        height: 50vh;
-    }
     .carousel-caption{
         left: 0 !important;
     }
     .section-title h1{
         font-size: 80px;
+    }
+    .services-title h1{
+        font-size: 80px;text-align: center;
     }
     ..company-info p{
         font-size: 15px;
@@ -1138,21 +1180,55 @@ footer hr{
         flex-direction: column;
         align-items: center;
     }
+    .slider-text{
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width: 820px){
+
+ .bottom-info-row{
+        flex-direction: column;
+        align-items: center;
+    }
+  .bottom-info-row p{
+        font-size: 20px;
+    }  
+}
+@media screen and (max-width: 760px){
+    ..company-info p{
+        font-size: 13px !important;
+    }
 }
 @media screen and (max-width: 990px){
     .header-adres .mb-2{
-        font-size: 11px;
-        margin-left: 5px;
-        margin-right: 5px;
+        font-size: 10px;
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+    .navbar-rows{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-right: 0 !important;
+        margin-left: -20px !important;
+    }
+    .header-slider .carousel-item{
+        height: 500px;
     }
 }
 @media screen and (max-width: 470px){
+    .header-slider .carousel-item{
+        height: 350px;
+    }
     .feedback-title img{
         display: block;
         padding-left: 15px;
         padding-right: 15px;
         max-width: 350px;
     }
+  .bottom-info-row p{
+        font-size: 15px;
+    }  
 }
 /*Анимация*/
 .slideInUp {

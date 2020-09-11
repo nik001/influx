@@ -14,10 +14,8 @@
 }
 .carousel-caption p{
     text-align: left;
-    margin-left: 5%;
 }
-.head-slide-button .gradient-border{
-    margin-left: 5%;
+.head-slide-button .top-call-button{
 }
 .carousel-control-next, .carousel-control-prev{
     bottom: auto;
@@ -28,12 +26,11 @@
     padding-top: 40px;
     padding-bottom: 15px;
     text-align: left;
-    margin-left: 5%;
 }
 .carousel-arrow::after {
     content: '';
     padding-top: 5%;
-    background: linear-gradient(to right top,#F2A509 49.5%, transparent 50%) left / 50.025% 100% no-repeat, linear-gradient(to left top, #F2A509 49.5%, transparent 50%) right / 50.025% 100% no-repeat;
+    background: linear-gradient(to right top,#F2A509 49.5%, transparent 50%) left / 51.5% 100% no-repeat, linear-gradient(to left top, #F2A509 49.5%, transparent 50%) right / 51.5% 100% no-repeat;
     position: absolute;
     width: 100%;
     bottom: -1px;
@@ -122,7 +119,6 @@
 @media (max-width: 800px) {
     .top-call-button{
         position: absolute;
-        top: -25px;
         right: -18px;
     }
 }
@@ -139,7 +135,7 @@
         top: 40px;
     }*/
 }
-@media (max-width: 760px) {
+@media (max-width: 800px) {
     .head-slide-button .gradient-border{
         margin-top: 8px;
         font-size: 16px !important;
@@ -159,21 +155,23 @@
         margin: 0px;
     }
 }
-@media (max-width: 720px) {
+@media (max-width: 767px) {
     .md-hide{
         display: none;
     }
     .top-call-button{
         position: absolute;
-        top: -25px;
         right: 0px;
         font-size: 16px !important;
+        margin-bottom: 20px;
+    }
+    #box{
+        height: 35px   !important;
+        width: 160px   !important;
     }
 }
 @media (max-width: 576px) {
     .top-call-button{
         position: absolute;
-        top: -25px;
-        right: 30px;
     }
 }
