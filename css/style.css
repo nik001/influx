@@ -1229,6 +1229,12 @@ footer hr{
   .bottom-info-row p{
         font-size: 15px;
     }  
+    .carousel-item .carousel-caption p{
+        font-size: 20px;
+    }
+    .carousel-item .carousel-caption h1{
+        font-size: 40px;
+    }
 }
 /*Анимация*/
 .slideInUp {
